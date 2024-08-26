@@ -48,6 +48,14 @@ module "s3_access" {
   source = "./modules/s3_access"
 }
 
+module "ebs_volume1" {
+  source = "./modules/ebs_volume"
+}
+
+module "ebs_volume2" {
+  source = "./modules/ebs_volume"
+}
+
 
 
 
