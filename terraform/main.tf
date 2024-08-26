@@ -1,4 +1,3 @@
-//6. kreiranje ebs-ai mozda nesto dodatno tipa dodavanje premisa
 terraform {
   required_providers {
     aws = {
