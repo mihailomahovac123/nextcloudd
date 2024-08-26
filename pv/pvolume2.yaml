@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: ebs-pv-2
+  name: ebs-pv2
 spec:
   capacity:
     storage: 8Gi
@@ -13,4 +13,4 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   csi:
     driver: ebs.csi.aws.com
-    volumeHandle: vol-0202a3c67ce9ce5f2
+    volumeHandle: vol-015d7e6baa221fd32
