@@ -26,13 +26,13 @@ variable "db_database_name" {
 variable "secret_name" {
   description = "Name of a secret storing db credentials."
   type = string
-  default = "mihailo_nextcloud_secrets"
+  default = ""
 }
 
 variable "secret_description" {
   description = "Description of a secret created."
   type = string
-  default = "This is secret for storing database credentials."
+  default = ""
 }
 
 

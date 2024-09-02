@@ -1,13 +1,13 @@
 variable "username_for_secrets_reader_user" {
   description = "User with premissions for reading secrets."
   type = string
-  default = "aws_secrets_manager_user_mihailo"
+  default = ""
 }
 
 variable "user_policy_name" {
   description = "Policy name for user accessing AWS secrets manager."
   type = string
-  default = "userpolicymihailo"
+  default = ""
 }
 
 variable "secrets_name" {
@@ -19,7 +19,7 @@ variable "secrets_name" {
 variable "region" {
   description = "Region for storing resources on AWS"
   type = string
-  default = "eu-central-1"
+  default = ""
 }
 
 variable "account_id" {

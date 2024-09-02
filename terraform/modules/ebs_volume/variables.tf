@@ -7,5 +7,5 @@ variable "ebs_size" {
 variable "az" {
   description = "Availability zone for our resources."
   type = string
-  default = "eu-central-1"
+  default = ""
 }
