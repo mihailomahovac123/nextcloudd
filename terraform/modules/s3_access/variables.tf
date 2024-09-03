@@ -40,3 +40,8 @@ variable "access_role4_s3_bucket" {
   type = string
   default = ""
 }
+
+variable "variable_from_tfvars" {
+  description = "Variable from tfvars."
+  type = string
+}

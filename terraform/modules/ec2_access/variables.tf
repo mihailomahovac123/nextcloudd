@@ -1,9 +1,8 @@
 variable "eks_node_group_role" {
   description = "Role for EKS cluster's nodes to authenticate."
   type = string
-  default = "karpenter-eks-node-group-20240902071908084500000002"
+  default = ""
 }
-
 
 variable "account_id" {
   description = "AWS user's account ID."
@@ -11,3 +10,7 @@ variable "account_id" {
   default = ""
 }
 
+variable "variables_from_tfvars" {
+  description = "Variables from .tfvars file"
+  type = string
+}

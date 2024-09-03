@@ -16,7 +16,6 @@ variable "ingress_class_name" {
   default = "nginx"
 }
 
-
 variable "host" {
   description = "Host."
   type = string
@@ -39,6 +38,11 @@ variable "service_port" {
   description = "Port of a running service we want to commmunicate to."
   type = number
   default = 8080
+}
+
+variable "variable_from_tfvars" {
+  description = "Variables from tfvars"
+  type = string
 }
 
 

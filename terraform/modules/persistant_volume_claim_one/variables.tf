@@ -1,25 +1,25 @@
 variable "name" {
   description = "Persistant volume name."
   type = string
-  default = "ebs-pv1"
+  default = ""
 }
 
 variable "access_mode" {
   description = "PV Access Mode."
   type = string
-  default = "ReadWriteOnce"
+  default = ""
 }
 
 variable "storage" {
   description = "PV's storage capacity."
   type = string
-  default = "8Gi"
+  default = ""
 }
 
 variable "driver" {
   description = "AWS EBS driver."
   type = string
-  default = "ebs.csi.aws.com"
+  default = ""
 }
 
 variable "volume_handle" {
@@ -31,13 +31,18 @@ variable "volume_handle" {
 variable "storage_class_name" {
   description = "Name of the storage class."
   type = string
-  default = "gp2" 
+  default = "" 
 }
 
 variable "persistent_volume_reclaim_policy" {
   description = "Persistent volume's reclaim policy."
   type = string
-  default = "Retain"
+  default = ""
+}
+
+variable "variables_from_tfvars" {
+  description = "Variables from tfvars file"
+  type = string
 }
 
 

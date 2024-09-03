@@ -1,23 +1,28 @@
 variable "name" {
 description = "Chart name."
 type = string
-default = "ingress-nginx"
+default = ""
 }
 
 variable "repository" {
 description = "Repository name."
 type = string
-default = "https://kubernetes.github.io/ingress-nginx"
+default = ""
 }
 
 variable "chart" {
 description = "Chart name."
 type = string
-default = "ingress-nginx"
+default = ""
 }
 
 variable "namespace" {
 description = "Nemaspace"
 type = string
-default = "ingress-nginx"
+default = ""
+}
+
+variable "variable_from_tfvars" {
+description = "Variables from tfvars."
+type = string
 }

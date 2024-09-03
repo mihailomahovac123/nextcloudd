@@ -38,3 +38,8 @@ variable "account_id" {
   type = string
   default = ""
 }
+
+variable "variable_from_tfvars" {
+  description = "Variables from tfvars."
+  default = ""
+}
