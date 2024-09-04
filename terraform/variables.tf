@@ -509,3 +509,108 @@ variable "secret_store_namespace" {
   default = ""
 }
 
+# MODULE NEXTCLOUD HELM CHART DEPLOYMENT AND VALUES.YAML
+
+
+#-------------------------Chart values.yaml variables-------------------------------------------------
+
+
+
+variable "nextcloud_username" {
+  description = "Nextcloud username."
+  type = string
+  default = ""
+}
+
+variable "nextcloud_password" {
+  description = "Nextcloud password."
+  type = string
+  default = ""
+}
+
+variable "db_secret_name" {
+  description = "Secret name for db creds secret."
+  type = string
+  default = ""
+}
+
+variable "hostKey" {
+  description = "Key value for host storing into secret."
+  type = string
+  default = ""
+}
+
+variable "usernameKey" {
+  description = "Key value for username storing into secret."
+  type = string
+  default = ""
+}
+
+variable "passwdKey" {
+  description = "Key value for passwd storing into secret."
+  type = string
+  default = ""
+}
+
+variable "databaseKey" {
+  description = "Key value for database storing into secret."
+  type = string
+  default = ""
+}
+
+variable "hostValue" {
+  description = " value for host storing into secret."
+  type = string
+  default = ""
+}
+
+variable "usernameValue" {
+  description = " value for username storing into secret."
+  type = string
+  default = ""
+}
+
+
+variable "passwdValue" {
+  description = "value for passwd storing into secret."
+  type = string
+  default = ""
+}
+
+
+variable "dbValue" {
+  description = "value for db storing into secret."
+  type = string
+  default = ""
+}
+
+
+variable "redis_storage_class" {
+  description = "Key value for host storing into secret."
+  type = string
+  default = ""
+}
+
+variable "nextcloud_helm_release" {
+  description = "Nextcloud helm release"
+  type = string
+  default = ""
+}
+
+variable "nextcloud_helm_repo" {
+  description = "Nextcloud helm repo."
+  type = string
+  default = ""
+}
+
+variable "nextcloud_chart" {
+  description = "Nextcloud chart."
+  type = string
+  default = ""
+}
+
+variable "nextcloud_helm_version" {
+    description = "Nextcloud helm version."
+    type = string
+    default = ""
+}

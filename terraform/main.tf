@@ -27,8 +27,6 @@ provider "helm" {
     config_path = "~/.kube/config"
   }  
 }
-
-
 #---------------------------------------------------------------------- MODULES -----------------------------------------------------------------------------------------------------------------
 module "rds_instance" {
 
@@ -119,13 +117,31 @@ module "ebs_volume2" {
 
 }
 
-
-
 module "nextcloud" {
-  source = "./modules/nextcloud_custom" 
-  helm_release = var.helm_release
-  chart_version = var.chart_version
-  path_to_the_chart = var.path_to_the_chart
+  source = "./modules/nextcloud_chart"
+  
+  helm_release = var.nextcloud_helm_release
+  helm_repository = var.nextcloud_helm_repo
+  chart = var.nextcloud_chart
+  version_nextcloud = var.nextcloud_helm_version
+
+
+  bucket_name = var.bucket_name
+  nextcloud_username = var.nextcloud_username
+  nextcloud_password = var.nextcloud_password
+  db_secret_name = var.new-secret
+
+  hostKey = var.hostKey
+  usernameKey = var.usernameKey
+  passwdKey = var.passwdKey
+  databaseKey = var.databaseKey
+
+  hostValue = var.hostValue
+  usernameValue = var.usernameValue
+  passwdValue = var.passwdValue
+  dbValue = var.dbValue
+  redis_storage_class = var.redis_storage_class
+
 }
 
 
